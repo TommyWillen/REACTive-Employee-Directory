@@ -5,7 +5,7 @@
 
 ## Description
 
-This app is my first attempt at a frontend React app. This app displays employee information that can be filtered based on search parameters as well and sorted alphabetically. Click [here]() to view the deployed app.
+This app is my first attempt at a frontend React app. This app displays employee information that can be filtered based on search parameters as well and sorted alphabetically. Click [here](https://tommywillen.github.io/REACTive-Employee-Directory/) to view the deployed app.
 
 ## Table of Contents
     
