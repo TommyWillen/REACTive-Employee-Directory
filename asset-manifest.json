@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/REACTive-Employee-Directory/static/css/main.8a5b64ee.chunk.css",
+    "main.js": "/REACTive-Employee-Directory/static/js/main.ad9db83b.chunk.js",
+    "main.js.map": "/REACTive-Employee-Directory/static/js/main.ad9db83b.chunk.js.map",
+    "runtime-main.js": "/REACTive-Employee-Directory/static/js/runtime-main.61cb0d3d.js",
+    "runtime-main.js.map": "/REACTive-Employee-Directory/static/js/runtime-main.61cb0d3d.js.map",
+    "static/css/2.150d169a.chunk.css": "/REACTive-Employee-Directory/static/css/2.150d169a.chunk.css",
+    "static/js/2.56bcdfaa.chunk.js": "/REACTive-Employee-Directory/static/js/2.56bcdfaa.chunk.js",
+    "static/js/2.56bcdfaa.chunk.js.map": "/REACTive-Employee-Directory/static/js/2.56bcdfaa.chunk.js.map",
+    "index.html": "/REACTive-Employee-Directory/index.html",
+    "static/css/2.150d169a.chunk.css.map": "/REACTive-Employee-Directory/static/css/2.150d169a.chunk.css.map",
+    "static/css/main.8a5b64ee.chunk.css.map": "/REACTive-Employee-Directory/static/css/main.8a5b64ee.chunk.css.map",
+    "static/js/2.56bcdfaa.chunk.js.LICENSE.txt": "/REACTive-Employee-Directory/static/js/2.56bcdfaa.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.61cb0d3d.js",
+    "static/css/2.150d169a.chunk.css",
+    "static/js/2.56bcdfaa.chunk.js",
+    "static/css/main.8a5b64ee.chunk.css",
+    "static/js/main.ad9db83b.chunk.js"
+  ]
+}
