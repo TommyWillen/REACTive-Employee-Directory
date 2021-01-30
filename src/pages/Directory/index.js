@@ -10,7 +10,7 @@ class Directory extends Component {
   state = {
     results: [],
     search: "",
-    sortOrder: ""
+    sortOrder: "",
   };
 
   componentDidMount() {
@@ -33,7 +33,7 @@ class Directory extends Component {
 
   sortByFirstName = () => {
     const empSort = this.state.results.sort((a, b) => {
-      a.name.first.toLowerCase().localeCompare(b.name.first.toLowerCase());
+      return a.name.first.toLowerCase().localeCompare(b.name.first.toLowerCase())
     });
 
     if (this.state.sortOrder === "down") {
@@ -47,7 +47,7 @@ class Directory extends Component {
 
   sortByLastName = () => {
     const empSort = this.state.results.sort((a, b) => {
-      a.name.last.toLowerCase().localeCompare(b.name.last.toLowerCase());
+      return a.name.last.toLowerCase().localeCompare(b.name.last.toLowerCase())
     });
 
     if (this.state.sortOrder === "down") {
@@ -57,7 +57,6 @@ class Directory extends Component {
       this.setState({ sortOrder: "down" });
     }
     this.setState({ results: empSort });
-    
   };
 
   render() {
@@ -69,14 +68,32 @@ class Directory extends Component {
             handleInputChange={this.handleInputChange}
             search={this.state.search}
           />
-          <EmployeeTable sortByFirstName={this.sortByFirstName} sortByLastName={this.sortByLastName}>
-            {this.state.results && this.state.results.map((item) =>
-              item.name.first.toLowerCase().includes(this.state.search) ? (
-                <Employee key={item.login.uuid} first={item.name.first} last={item.name.last} phone={item.phone} email={item.email} thumbnail={item.picture.thumbnail} />
-              ) : item.name.last.toLowerCase().includes(this.state.search) ? (
-                <Employee key={item.login.uuid} first={item.name.first} last={item.name.last} phone={item.phone} email={item.email} thumbnail={item.picture.thumbnail}/>
-              ) : null
-            )}
+          <EmployeeTable
+            sortByFirstName={this.sortByFirstName}
+            sortByLastName={this.sortByLastName}
+          >
+            {this.state.results &&
+              this.state.results.map((item) =>
+                item.name.first.toLowerCase().includes(this.state.search) ? (
+                  <Employee
+                    key={item.login.uuid}
+                    first={item.name.first}
+                    last={item.name.last}
+                    phone={item.phone}
+                    email={item.email}
+                    thumbnail={item.picture.thumbnail}
+                  />
+                ) : item.name.last.toLowerCase().includes(this.state.search) ? (
+                  <Employee
+                    key={item.login.uuid}
+                    first={item.name.first}
+                    last={item.name.last}
+                    phone={item.phone}
+                    email={item.email}
+                    thumbnail={item.picture.thumbnail}
+                  />
+                ) : null
+              )}
           </EmployeeTable>
         </Container>
       </div>
